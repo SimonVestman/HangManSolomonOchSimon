@@ -1,16 +1,22 @@
+/*
+This is the part of the game where you choose if you want to play against a other player or the computer
+Made by Simon Vestman
+This program was created 2020-01-23
+ */
+
 import java.util.Scanner;
 
 public class HangMan {
     public static  void main (String [] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Do you want to play against a other player write player or a computer write computer");
-        String Gamemode = Scanner.nextLine();
-        if(Gamemode = "computer"){
-            System.out.println("Hej då");
+        System.out.println("Do you want to play against a other player or a computer");
+        String Gamemode = sc.nextLine();
 
-            else if(Gamemode = "player"){
-                System.out.println("hej");
-            }
+        if(Gamemode.equalsIgnoreCase("player")) {
+            System.out.println("You are now playing against an ohter player");
+
+        } else if (Gamemode.equalsIgnoreCase("computer")){
+                System.out.println("You are now playing against a computer");
         }
     }
 }
