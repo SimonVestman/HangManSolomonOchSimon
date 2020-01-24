@@ -423,8 +423,7 @@ varieties
 teacher	
 show
 shows
-speaker	
-baby
+speaker
 babies
 base	
 miss
