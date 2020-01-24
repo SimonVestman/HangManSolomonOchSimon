@@ -4,9 +4,7 @@ Detta är ett hängagubbe spel som man både kan spela mot en dator som väljer 
 Om man gissar fel 7 gånger så kommer man att förlora.
 
   Att göra lista
-  
-    * Välja singel eller multiplayer
-    
+     
     * En ordlista och ett pogram som kan slumpa ett av orden ur filen. (singelplayer)
 
     * Ett program som läser in det ordet som spelare 1 väljer. (multiplayer)
@@ -22,4 +20,5 @@ Om man gissar fel 7 gånger så kommer man att förlora.
     är helt ifyllt så vinner man.
     
   Klar lista
-    
+  
+    * Välja singel eller multiplayer
