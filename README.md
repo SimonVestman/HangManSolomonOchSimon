@@ -6,9 +6,7 @@ Om man gissar fel 7 gånger så kommer man att förlora.
   Att göra lista
      
     * En ordlista och ett pogram som kan slumpa ett av orden ur filen. (singelplayer)
-
-    * Ett program som läser in det ordet som spelare 1 väljer. (multiplayer)
-    
+        
     * Ett program som kan läsa en den gissade bokstaven.
     
     * Ett program som kan kolla om bokstaven finns i ordet.
@@ -21,4 +19,6 @@ Om man gissar fel 7 gånger så kommer man att förlora.
     
   Klar lista
   
-    * Välja singel eller multiplayer
+    * Välja singel eller multiplayer  
+    * Ett program som läser in det ordet som spelare 1 väljer.
+    
