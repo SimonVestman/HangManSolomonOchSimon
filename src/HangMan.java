@@ -4,9 +4,6 @@ Made by Simon Vestman
 This program was created 2020-01-23
  */
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class HangMan {
@@ -21,30 +18,28 @@ public class HangMan {
             System.out.println("You are now playing against an other player");
             boolean win = false;
             int numguess = 0;
-            String temp = "";
-            String hold = "";
-            String guessed = "";
 
             System.out.println("Player 1 can now enter the secret word!");
             String word = sc.nextLine();
-            do {
+            while(numguess <7) {
+                char[] secret = word.toCharArray();
                 System.out.println("Player 2 can now guess!");
-                String guess = sc.nextLine();
-                for (int i = 0; i < word.length(); i++) {
-                    if (guess.equals(Character.toString(word.charAt(i)))) {
-                        hold = Character.toString(temp.charAt(i)).replace("-", guess); // något fel här
-                        temp = temp.substring(0, i) + hold + temp.substring(i + 1, temp.length());
+                char guess = sc.next().charAt(0);
+                for (char c : secret) {
+                    System.out.println(c);
+
+                    boolean contains = false;
+                    for (char v : secret) {
+                        if (v == guess) {
+                            contains = true;
+                            break;
+                        }
+                    }if(!contains) {
+                        numguess++;
+                        System.out.println("The letter you guessed isn't in the word!");
                     }
                 }
-                numguess++;
-                win = true;
-                System.out.println(temp);
-                if (temp.equals(word)) {
-                    System.out.println("You guessed the word right!" + "\n" + word);
-                    break;
-                }
-
-            } while (numguess < 7);
+            }
 
         } else if (Gamemode.equalsIgnoreCase("computer")) {
             //Multiplayer begins
